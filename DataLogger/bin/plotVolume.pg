@@ -1,0 +1,69 @@
+#!/usr/bin/gnuplot --persist
+#
+#########
+######### best tutorial I could find was here: http://zenonharley.com/gnuplot/cli/2015/06/29/graphing-data-from-the-command-line.html
+######### Will need to amend the label offset every year!
+######### https://stackoverflow.com/questions/40484582/gnuplot-two-columns-histogram-with-values-on-top-of-bars
+#########
+#
+# Output W3C Scalable Vector Graphics
+set terminal svg enhanced font "Arial,14" size 1200,300
+set output sprintf("%s/images/volumes.svg", system("echo $WEB_SERVER_DIR"))
+
+unset border                    # Remove border around chart
+# set title 'Volume per year'   # Set graph title
+set key top right outside horizontal
+# set xlabel 'Month'            # Set label of x-axis
+set ylabel 'No. of Loads'       # Set label of y-axis
+# set yrange [0 to 250]         # Manual set the Y-axis range
+
+set style data histogram        # Use a histogram
+set boxwidth 0.8 relative       # set width of the histogram boxes
+set style histogram clustered gap 2
+set style fill solid 0.4 noborder # histogram bars: 1 is solid, less than 1 is transparent
+# remove some whitespace to the left and right of the graph
+set offset -0.5,-0.5,0,0 # this line causes issues if we only do the smooth line not the histogram
+
+set xtics scale 0               # Disable the tiny tick lines on the x-axis
+set tic scale 0
+set grid ytics
+
+# --- build dat_file from environment ---
+logdir = system("echo $LOGS_DIR")
+dat_file = sprintf("%s/vol.dat", logdir)
+
+# --- build awk command string (concatenate to avoid sprintf format mistakes) ---
+awk_prog = "BEGIN { yr=2016 } \
+!/^#/ && NF!=0 { for(i=2;i<=NF;i++) { a[i]+=$i; if(NF>maxCol) maxCol=NF } } \
+END { for (y=2;y<=maxCol;y++) printf \"%d:(%g&{x}Loads) \", yr++, a[y] }"
+
+# note: concatenate the pieces so we don't accidentally use the wrong sprintf format
+awk_cmd = "awk '" . awk_prog . "' " . dat_file
+
+# capture output
+totals = system(awk_cmd)
+
+# debug
+#print "awk_cmd = ".awk_cmd
+#print "totals  = ".totals
+# number of year tokens
+
+# parse totals (space-separated tokens)
+n = words(totals)
+do for [i=1:n] {
+  item = word(totals, i)
+#  print sprintf("item %d = %s", i, item)
+}
+
+# Get current year and compute lastCol safely (avoid backticks)
+#year_str = system("date +%Y")
+year_str = "2022"
+# strip newline & convert to integer robustly
+year = int(real(year_str))        
+lastCol = year - 2014
+#print sprintf("lastCol = %d", lastCol)
+
+# Plot (unchanged apart from lastCol being numeric now)
+plot for [i=2:lastCol] dat_file using i title word(totals,i-1) linewidth 3 smooth bezier, \
+     for [i=2:lastCol] "" using i:xtic(1) notitle, \
+		       "" using :lastCol:lastCol with labels offset (lastCol/2)+0.4,1 notitle

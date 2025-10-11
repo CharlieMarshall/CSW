@@ -1,0 +1,72 @@
+#!/bin/bash
+
+# script to determine the filling mode used to fill the tankers
+# plots a monthly graph of the tankers and filling mode
+#
+# ff holds an array of the fast filled loads
+# ll holds an array of the low level loads
+# gravity holds an array of the gravity loads
+# arrays hold the volume pumped in each mode. 29500 means the load is full
+
+# if a argument is passed use this as the year, otherwise use the current year
+if [ -z "$2" ]; then
+	YEAR=$(date +%Y)
+else
+        YEAR=$2
+fi
+
+awk -F'\t' -v month=$1 -v year=$YEAR '
+	# we use sprintf to insert leading zero into the month otherwise '2' would search for February and December
+	# we only want data for the required month, which are loading.
+	$2 ~ sprintf("%02d",month)"/"year && $8=="LOADING" {
+		if(++loadCount==1)	{ first=$1 } else { if($1>last) last=$1 }	# find the first & last load for the for loop
+
+		if(ff[$1]==29500 || ll[$1]==29500 )
+			next;	# Skip the line if we already know we are pumping. Assumes pumping for the rest of the load
+
+		count[$1]++;
+
+		# If count==1 and set flow rate is fast fill we assume we fast filled the whole load, if there is only 1 count for a load and it is not set to 750 we assume it was gravity filled
+		if(count[$1]==1){
+			if($13==750 || $13==500)	{ ff[$1]=29500; next }
+			if($13==350)			{ ll[$1]=29500; next }
+		}
+		# If count!=1 we check if the flow has moved between logs
+		if(count[$1]!=1){
+			if($13 != 200){
+				# the pump is running
+				if($13==350)
+					ll[$1]=29500;		# we are low level pumping
+				else {
+					ff[$1]=29500;		# we are fast fill pumping
+
+					# if we were previously gravity filling we need to record the last figure as a gravity fill level
+					if(setFlow[$1] != $13)
+						gravity[$1]=pumped[$1];
+				}
+			}
+			else
+				gravity[$1] = $10;		# flow rate set to 200 (gravity filling)
+		}
+
+		# hold the last entries so we can make a comparison (previous to current)
+		pumped[$1]=$10;
+		flow[$1]=$11;
+		setFlow[$1]=$13;
+	}
+	END {
+		print "#Load\tFastFill\tLowLevel\tGravity";
+
+		if(first==0)
+			exit(1);	# this stops empty graphs being drawn for months we have not filled
+
+		for(loadno=first; loadno<=last; loadno++){
+			# One of the rows has to be 29500 to fill the graph
+			if(ff[loadno]==0 && ll[loadno]==0)
+				gravity[loadno]=29500;	# load was entirely gravity filled
+
+			printf "%d\t%d\t%d\t%d\n", loadno, ff[loadno], ll[loadno], gravity[loadno];
+		}
+	}' $LOGS_DIR/panel_log.txt > $LOGS_DIR/fillmode.dat
+
+plotfillmode.pg

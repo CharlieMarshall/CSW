@@ -1,0 +1,37 @@
+#!/usr/bin/gnuplot --persist
+set terminal svg enhanced font "Arial,14" size 1000,300
+set output sprintf("%s/images/boreholeElec.svg", system("echo $WEB_SERVER_DIR"))
+
+dat_file=sprintf("%s/boreholeElec.dat", system("echo $LOGS_DIR"))
+
+# Replace small stripes on the Y-axis with a horizontal gridlines
+set tic scale 0
+set grid ytics
+
+# Remove border around chart
+unset border
+
+set ylabel "No. of Hours Abstracting"
+set yrange [0:24]
+set ytics (0,4,8,12,16,20,24)
+
+set key top right outside horizontal
+set style data histograms
+set style histogram rowstacked
+set boxwidth 0.5 #relative
+set style fill solid # 1.0 border -1
+
+# Calculate totals
+stats dat_file every ::0 using 2 nooutput
+night = int(STATS_sum)
+stats dat_file every ::0 using 3 nooutput
+day = int(STATS_sum)
+
+# Also, ensure 'awk' output is only the number by appending '| tr -d "\n"' to remove the trailing newline.
+monthlyEfficieny = int(system("awk ' NR>1 { pumped+=$2+$3} END { print (pumped / ( (NR-1)*24))*100 }' \"" . dat_file . "\" | tr -d \"\n\""))
+meanAverageHrPumped = int(system("awk ' NR>1 { pumped+=$2+$3} END { print pumped / (NR-1) }' \"" . dat_file . "\" | tr -d \"\n\""))
+
+plot dat_file using 2:xtic(1) title sprintf("Night Rate (%d hours)", night) lt rgb "#009e73", \
+  "" using 3 title sprintf("Day Rate (%d hours)", day) lt rgb "#e24d3d", \
+  "" using 4 title sprintf("Average Hours (%d total hours)", day + night) linewidth 3 lt 1 smooth bezier, \
+  meanAverageHrPumped with lines title sprintf("Average Hours (%d%% capacity)", monthlyEfficieny) linewidth 3 lt 5 # Use 'with lines' to plot a horizontal line

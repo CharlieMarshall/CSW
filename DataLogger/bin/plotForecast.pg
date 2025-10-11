@@ -1,0 +1,26 @@
+#!/usr/bin/gnuplot --persist
+# This script requres lowlevel value to be passed as a command line argument
+# Usage: gnuplot -e lowlevel=value plotForecast.pg eg gnuplot -e lowlevel=40 plotForecast.pg
+#
+set terminal svg font "Arial,14" size 1200,520
+set output sprintf("%s/images/forecast.svg", system("echo $WEB_SERVER_DIR"))
+
+set datafile separator "\t"
+
+set xdata time
+set timefmt "%d/%m/%Y %H:%M"
+set format x "%H:%M\n%a\n%d %b"
+
+set ylabel "Stock (water) m3"
+
+set yrange [-50:475]
+set ytics -50,50,450
+set autoscale xfix
+
+set title "Forecast Stock Levels"
+set key top right horizontal
+set ytic scale 0
+set grid
+set style data lines
+
+plot sprintf("%s/forecast.dat", system("echo $LOGS_DIR")) using 1:2 title "Forecast", lowlevel title "Low level alarm"

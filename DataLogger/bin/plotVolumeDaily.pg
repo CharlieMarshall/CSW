@@ -1,0 +1,27 @@
+#!/usr/bin/gnuplot --persist
+
+set terminal svg enhanced font "Arial,14" size 1000,300
+set output "$WEB_SERVER_DIR/images/volumesDaily.svg"
+
+# Calculate totals
+stats 'loadsByDay.dat' every ::0 using 2 nooutput
+weekdayTotal = int(STATS_sum)
+stats 'loadsByDay.dat' every ::0 using 3 nooutput
+weekendTotal = int(STATS_sum)
+
+# Replace small stripes on the Y-axis with a horizontal gridlines
+set tic scale 0
+set grid ytics
+
+# Remove border around chart
+unset border
+
+set ylabel "No. of Delivered Loads"
+set yrange [0 to 18]
+
+set boxwidth 0.5
+set style fill solid
+
+# 1:3 is weekends
+plot "loadsByDay.dat" using 1:2:xtic(1) with boxes title sprintf("Weekday (%d)", weekdayTotal ) lt rgb "#406090", \
+"" using 1:3:xtic(1) with boxes title sprintf("Weekend (%d)", weekendTotal ) lt rgb "#e24d3d" # fillstyle pattern 9

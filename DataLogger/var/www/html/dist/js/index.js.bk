@@ -1,0 +1,235 @@
+function getPLCData(){
+ $.ajax({
+  url: 'fins.php',
+  type: 'get',
+  datatype: 'json',
+  success: function(data){
+   var myData = $.parseJSON(data);
+   $("#pointTable").html(tableMarkupFromObjectArray(myData[0]));     // point array
+   $("#tankTable").html(tableMarkupFromObjectArray(myData[1]));      // tank array
+
+   // note we have place the misc inside an array to match our other code
+   $("#miscTable").html(tableMarkupFromObjectArray([myData[2]]));    // misc array
+
+   // populate forecast data except flowrate, this happens in the getShellData function
+   $("#buffer").val( (myData[1][0]["Level (m3)"] + myData[1][1]["Level (m3)"] + myData[1][2]["Level (m3)"]).toFixed(1) );
+   $("#maxbuffer").val(myData[1][0]["Set Level (m3)"][0] + myData[1][1]["Set Level (m3)"][0] + myData[1][2]["Set Level (m3)"][0]);
+   $("#ecoFillOn").val(myData[2]["Eco Fill From (hrs)"][0]);
+   $("#ecoFillOff").val(myData[2]["Eco Fill To (hrs)"][0]);
+
+// cant remember what is happening here
+//   document.getElementById("#incTankers").value = myData[2]["Eco Fill To (hrs)"][0];
+
+   $("#time").html(new Date().toLocaleString());                     // show time we last updated / refreshed our data
+
+  },
+  complete:function(data){
+//   setTimeout(getPLCData,10000);
+//   setTimeout(getPLCData,1); // max speed!
+     updateForecast();
+     setTimeout(refreshData,600000); // 600000 ms is 10 minutes
+  }
+ });
+}
+
+function getShellData(){
+ $.ajax({
+  url: 'getShellData.php',
+  type: 'get',
+  datatype: 'json',
+  success: function(data){
+   var myData = $.parseJSON(data);
+
+   $("#flowrate").val(myData[4].toFixed(1));
+   updateForecast();
+
+   // update our pre tags
+   $("#preLoads").html(myData[0]);
+   $("#preGate").html(myData[1]);
+   $("#preCallOff").html(myData[2]);
+   $("#preCIP").html(myData[3]);
+
+/*
+   document.getElementById("tankSummary").src = "/images/tank_summary.svg?t=" + timestamp;
+   document.getElementById("frGraph").src = "/images/fr.svg?t=" + timestamp;
+   document.getElementById("waterImg").src = "/images/water.svg?t=" + timestamp;
+   document.getElementById("volImg").src = "/images/volumes.svg?t=" + timestamp;
+   document.getElementById("daily").src = "/images/volumesDaily.svg?t=" + timestamp;
+   document.getElementById("boreElec").src = "/images/boreholeElec.svg?t=" + timestamp;
+   document.getElementById("fillmode").src = "/images/elec.svg?t=" + timestamp;
+*/
+   var timestamp = new Date().getTime(); // we append a timestamp to the query string so images can not be cached
+   $("#tankSummary").attr("src", "/images/tank_summary.svg?t=" + timestamp);
+   $("#frGraph").attr("src", "/images/fr.svg?t=" + timestamp);
+   $("#waterImg").attr("src", "/images/water.svg?t=" + timestamp);
+   $("#volImg").attr("src", "/images/volumes.svg?t=" + timestamp);
+   $("#daily").attr("src","/images/volumesDaily.svg?t=" + timestamp);
+   $("#boreElec").attr("src", "/images/boreholeElec.svg?t=" + timestamp);
+   $("#fillmode").attr("src","/images/elec.svg?t=" + timestamp);
+
+  }
+ });
+}
+
+function refreshData(){
+  getPLCData();
+  getShellData();
+}
+
+function tableMarkupFromObjectArray(obj) {
+      let headers = `
+      ${Object.keys(obj[0]).map((col) => {
+        return `<th>${col}</th>`;
+      }).join('')}`;
+
+      let content = obj.map((row, idx) => {
+        return `<tr>
+          ${Object.values(row).map((datum) => {
+            if( Array.isArray(datum) )
+                return `<td>${datum[0]}</td>`
+            else
+              return `<td>${datum}</td>`
+          }).join('')}
+        </tr>`
+      }).join('')
+
+      let tablemarkup = `
+      <table class="table table-condensed table-bordered table-hover table-striped">
+        ${headers}
+        ${content}
+      </table>`
+    return tablemarkup
+}
+
+function updateForecast() { 
+  var tankerbuffer = 0;
+  if ($("#incTankers").prop("checked")) {
+    tankerbuffer = $("#tankerTextLabel").text();
+  }
+  var data = $("#forecastForm").serializeArray();
+  data.push({name:"tankerbuffer", value:tankerbuffer});
+  $.ajax({url:"getForecast.php", type:"get", data:data, success:function(response) {
+    d = new Date();
+    $("#graph").attr("src", "/images/forecast.svg?" + d.getTime());
+  }});
+} 
+
+$(function() { // document.ready()
+  getPLCData();
+
+  var $loading = $('#loading').hide();
+  $(document).ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
+  $("#accordion > div").accordion({collapsible:true, heightStyle:"content", header:"h3"});
+
+  $("#updateButton").click(function(){
+    getPLCData();
+  });
+
+  $("#startforecast").datetimepicker({dateFormat:"dd/mm/yy"});
+  $("#tanks, #total").checkboxradio({icon:false});
+
+  var d = new Date();
+  $("#volMonth")[0].selectedIndex = d.getMonth();
+  $("#volYear").val(d.getFullYear());
+
+  $("#volMonth, #volYear").change(function() {
+//    var data = $(this).serialize();
+    var data = $("#monthlyStats").serializeArray();
+    $.ajax({url:"getLoadsByDay.php", type:"get", data:data, success:function(response) {
+      d = new Date();
+      $("#daily").attr("src", "/images/volumesDaily.svg?" + d.getTime());
+      $("#fillmode").attr("src", "/images/elec.svg?" + d.getTime());
+      $("#boreElec").attr("src", "/images/boreholeElec.svg?" + d.getTime());
+    }});
+  });
+
+// tank level slider
+  var handle = $("#custom-handle");
+  $("#slider").slider({min:1, max:90, value:1, create:function() {
+    handle.text($(this).slider("value"));
+  }, slide:function(event, ui) {
+    handle.text(ui.value);
+  }});
+  $("#slider").on("slidestop", function(event, ui) {
+    var days = $("#slider").slider("option", "value");
+    var graph = $("input[type=radio][name=graphGroup]:checked").val();
+    $.ajax({url:"getTankGraph.php", type:"get", data:{days:days, graph:graph}, success:function(response) {
+      d = new Date();
+      $("#tankSummary").attr("src", "/images/tank_summary.svg?" + d.getTime());
+    }});
+  });
+// end of tank level slider
+
+// flowrate slider
+  var handleFR = $("#flowRate-handle");
+  $("#sliderFR").slider({min:1, max:500, value:30, create:function() {
+    handleFR.text($(this).slider("value"));
+  }, slide:function(event, ui) {
+    handleFR.text(ui.value);
+  }});
+  $("#sliderFR").on("slidestop", function(event, ui) {
+    var FRdays = $("#sliderFR").slider("option", "value");
+    $.ajax({url:"getFlowRate.php", type:"get", data:{days:FRdays}, success:function(response) {
+      d = new Date();
+      $("#frGraph").attr("src", "/images/fr.svg?" + d.getTime());
+    }});
+  });
+// end of flowrate slider
+
+  $("#tanks, #total").change(function() {
+    var graph = $("input[type=radio][name=graphGroup]:checked").val();
+    $.ajax({url:"getTankGraph.php", type:"get", data:{graph:graph}, success:function(response) {
+      d = new Date();
+      $("#tankSummary").attr("src", "/images/tank_summary.svg?" + d.getTime());
+    }});
+  });
+
+  $("#startforecast, #buffer, #maxbuffer, #flowrate, #incTankers, #ecoFillOn, #ecoFillOff").change( updateForecast );
+
+  $("input[name=flow], input[name=channel]").change(function() {
+    var $url = "http://www.timeview2.net/xdq/Cotswold%20Springs/COTSWOLDS%20SPRING/DODINGTON%20SPRING/IMAGES/";
+    var $selectedflow = $("input[name=flow]:checked").val();
+    var $selectedChannel = $("input[name=channel]:checked").val();
+    $("#flowIMG").attr("src", $url + $selectedflow + $selectedChannel);
+    $("#flowlink").attr("href", $url + $selectedflow + $selectedChannel);
+  });
+  $.getJSON("http://environment.data.gov.uk/flood-monitoring/id/stations/53131", function(data) {
+    var latestDate = data["items"]["measures"]["2"]["latestReading"]["dateTime"].replace(/T/g, " ").slice(0, -4);
+    var latestRead = data["items"]["measures"]["2"]["latestReading"]["value"];
+    var maxOnRecord = data["items"]["stageScale"]["maxOnRecord"]["value"];
+    var minOnRecord = data["items"]["stageScale"]["minOnRecord"]["value"];
+    var typicalHigh = data["items"]["stageScale"]["typicalRangeHigh"];
+    var typicalLow = data["items"]["stageScale"]["typicalRangeLow"];
+    google.charts.load("current", {"packages":["gauge"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([["Label", "Value"], ["Height", latestRead]]);
+      var options = {min:minOnRecord, max:maxOnRecord, redFrom:minOnRecord, redTo:typicalLow, yellowFrom:typicalLow, yellowTo:typicalHigh, greenFrom:typicalHigh, greenTo:maxOnRecord, minorTicks:5};
+      var chart = new google.visualization.Gauge(document.getElementById("chart_div"));
+      chart.draw(data, options);
+      $("#chart_div").append("<p>Recorded: " + latestDate + "</p>");
+    }
+  });
+
+  $(".btn-link").click(function() {
+    var data = $(this).val();
+    $.ajax({url:"getMisc.php", type:"POST", data:{data:data}, success:function(response) {
+      $("html, body").animate({ scrollTop: 0 }, 200);
+      $("#output").html("<pre>" + response + "</pre>");
+      if (data == "alarm") {
+        if ($("#alarm").button().text() == "Disable Alarm") {
+          $("#alarm").button().text("Enable Alarm");
+        } else {
+          $("#alarm").button().text("Disable Alarm");
+        }
+      }
+    }});
+  });
+
+});

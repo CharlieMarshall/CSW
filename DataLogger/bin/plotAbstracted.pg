@@ -1,0 +1,36 @@
+#!/usr/bin/gnuplot --persist
+set decimal locale # needed for thousand seperator
+
+#set terminal svg enhanced font "Arial,14" size 800,350
+set terminal svg enhanced font "Arial,14" size 1000,300
+set output "$WEB_SERVER_DIR/images/water.svg"
+set datafile separator "\t"
+
+# Replace small stripes on the Y-axis with a horizontal gridlines
+set xtic scale 0.5
+set ytic scale 0
+set grid ytics
+
+unset border # Remove border around chart
+
+set xtics nomirror rotate by -45 left offset -1,0 # line up month label with xtics
+
+# set xlabel "2017-2018"
+set ylabel "Litres" offset 2.5
+set yrange [0 to 80000000]
+set ytics (0,20000000,40000000,60000000,80000000)
+
+set format y "%'.0f" # display litres as million litres
+
+set title "Abstraction"
+set style data lines
+set key bottom right
+
+set rmargin 5 # set a border otherwise the the final month is cut off
+
+# Calculate total delivered and add to key, show in Millions
+stats 'abstraction.dat' every ::0 using 3 nooutput
+large = (STATS_max) / 1000000
+
+plot "abstraction.dat" using 2:xticlabels(1) title "Permitted (73M)" lt rgb "#e24d3d", \
+"" using 3:xticlabels(1) title sprintf( "Delivered (%.1fM)", large) lt rgb "#406090"

@@ -1,0 +1,937 @@
+                                                                                                              0.20
+
+
+
+
+                                          Analysis Cost Summary
+                                          Please note: This is not an invoice
+Cotswold Spring Water                                               Cost Summary Reference:                   4,048
+Dodington Spring                                                    PO Number:                     27000247-2122/12
+Dodington Ash                                                       Laboratory Project:            27000247-2122/12
+Chipping Sodbury                                                    Quote Reference:                           1819
+BS37 6RX
+                                                                    Report Date:                         07/02/2022
+
+
+
+
+Sample Ref:       SU-558066           Sampled:       05/01/2022 12:30       Report No.:   136983
+Description:      4482
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                            £4.75
+Confirmed Enterococci 250ml                                                                                   £4.03
+Confirmed Pseudomonas 250ml                                                                                   £4.05
+Plate count 3 day @ 22°C                                                                                      £3.46
+Potable plate count @ 37°C - 1 day                                                                            £3.20
+                                                                                                             £19.49
+
+Sample Ref:       SU-558067           Sampled:       05/01/2022 19:40       Report No.:   136984
+Description:      4483
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                            £4.75
+Confirmed Enterococci 250ml                                                                                   £4.03
+Confirmed Pseudomonas 250ml                                                                                   £4.05
+Plate count 3 day @ 22°C                                                                                      £3.46
+Potable plate count @ 37°C - 1 day                                                                            £3.20
+                                                                                                             £19.49
+
+Sample Ref:       SU-558068           Sampled:       05/01/2022 21:15       Report No.:   136985
+Description:      4484
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                            £4.75
+Confirmed Enterococci 250ml                                                                                   £4.03
+Confirmed Pseudomonas 250ml                                                                                   £4.05
+Plate count 3 day @ 22°C                                                                                      £3.46
+Potable plate count @ 37°C - 1 day                                                                            £3.20
+                                                                                                             £19.49
+
+Sample Ref:       SU-558069           Sampled:       05/01/2022 23:15       Report No.:   136986
+Description:      4485
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                            £4.75
+Confirmed Enterococci 250ml                                                                                   £4.03
+Confirmed Pseudomonas 250ml                                                                                   £4.05
+Plate count 3 day @ 22°C                                                                                      £3.46
+Potable plate count @ 37°C - 1 day                                                                            £3.20
+                                                                                                             £19.49
+
+
+
+
+00004048-01.PDF                                                                                         Page 1 of 15
+Sample Ref:       SU-558070           Sampled:       06/01/2022 02:25   Report No.:   136987
+Description:      4486
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558071           Sampled:       06/01/2022 02:45   Report No.:   136988
+Description:      4487
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558072           Sampled:       06/01/2022 08:55   Report No.:   136989
+Description:      4488
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558073           Sampled:       06/01/2022 10:30   Report No.:   136990
+Description:      Borehole
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558074           Sampled:       05/01/2022 15:00   Report No.:   136991
+Description:      BLENDS 4482
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558202           Sampled:       06/01/2022 11:45   Report No.:   137334
+Description:      4489
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 2 of 15
+Sample Ref:       SU-558203           Sampled:       06/01/2022 15:10   Report No.:   137033
+Description:      4490
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558204           Sampled:       06/01/2022 16:25   Report No.:   137034
+Description:      4491
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558205           Sampled:       06/01/2022 19:56   Report No.:   137035
+Description:      4492
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558206           Sampled:       07/01/2022 11:00   Report No.:   137036
+Description:      4493
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558207           Sampled:       07/01/2022 11:00   Report No.:   137037
+Description:      4494
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558306           Sampled:       08/01/2022 12:15   Report No.:   137354
+Description:      4494
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 3 of 15
+Sample Ref:       SU-558307           Sampled:       08/01/2022 14:45   Report No.:   137355
+Description:      4495
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558308           Sampled:       08/01/2022 15:50   Report No.:   137356
+Description:      4496
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558309           Sampled:       08/01/2022 18:15   Report No.:   137357
+Description:      4497
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558310           Sampled:       08/01/2022 21:00   Report No.:   137358
+Description:      4498
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558311           Sampled:       08/01/2022 22:15   Report No.:   137359
+Description:      4499
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558312           Sampled:       09/01/2022 00:10   Report No.:   137360
+Description:      4500
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 4 of 15
+Sample Ref:       SU-558313           Sampled:       09/01/2022 01:50   Report No.:   137361
+Description:      4501
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558314           Sampled:       09/01/2022 03:40   Report No.:   137362
+Description:      4502
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558315           Sampled:       09/01/2022 06:10   Report No.:   137363
+Description:      4503
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558316           Sampled:       09/01/2022 11:15   Report No.:   137364
+Description:      4504
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558317           Sampled:       09/01/2022 11:15   Report No.:   137365
+Description:      4505
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558544           Sampled:       09/01/2022 15:30   Report No.:   137110
+Description:      4506
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 5 of 15
+Sample Ref:       SU-558546           Sampled:       10/01/2022 10:00   Report No.:   137111
+Description:      4507
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-558550           Sampled:       10/01/2022 10:00   Report No.:   137112
+Description:      4508
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559001           Sampled:       14/01/2022 13:00   Report No.:   137297
+Description:      BLENDS 4507
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559409           Sampled:       18/01/2022 19:35   Report No.:   137447
+Description:      4509
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559410           Sampled:       18/01/2022 20:50   Report No.:   137448
+Description:      4510
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559411           Sampled:       18/01/2022 23:15   Report No.:   137449
+Description:      4511
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 6 of 15
+Sample Ref:       SU-559412           Sampled:       19/01/2022 00:30   Report No.:   137450
+Description:      4512
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559413           Sampled:       19/01/2022 03:10   Report No.:   137451
+Description:      4513
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559414           Sampled:       19/01/2022 04:25   Report No.:   137452
+Description:      4514
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559415           Sampled:       19/01/2022 07:40   Report No.:   137453
+Description:      4515
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559474           Sampled:       19/01/2022 12:45   Report No.:   137566
+Description:      4516
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559475           Sampled:       19/01/2022 14:40   Report No.:   137567
+Description:      4517
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 7 of 15
+Sample Ref:       SU-559476           Sampled:       19/01/2022 15:40   Report No.:   137568
+Description:      4518
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559477           Sampled:       19/01/2022 19:40   Report No.:   137569
+Description:      4519
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559478           Sampled:       19/01/2022 19:50   Report No.:   137570
+Description:      4520
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559479           Sampled:       20/01/2022 01:45   Report No.:   137571
+Description:      4521
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559480           Sampled:       20/01/2022 01:45   Report No.:   137572
+Description:      4522
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559481           Sampled:       20/01/2022 07:50   Report No.:   137573
+Description:      4523
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 8 of 15
+Sample Ref:       SU-559482           Sampled:       20/01/2022 09:00   Report No.:   137574
+Description:      4524
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559483           Sampled:       20/01/2022 11:15   Report No.:   137575
+Description:      4525
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559622           Sampled:       20/01/2022 12:45   Report No.:   137612
+Description:      4526
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559623           Sampled:       20/01/2022 13:00   Report No.:   137642
+Description:      4527
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559624           Sampled:       20/01/2022 16:45   Report No.:   137614
+Description:      4528
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+Sample Ref:       SU-559625           Sampled:       20/01/2022 15:15   Report No.:   137643
+Description:      4529
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                   £4.75
+Confirmed Enterococci 250ml                                                                          £4.03
+Confirmed Pseudomonas 250ml                                                                          £4.05
+Plate count 3 day @ 22°C                                                                             £3.46
+Potable plate count @ 37°C - 1 day                                                                   £3.20
+                                                                                                    £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 9 of 15
+Sample Ref:       SU-559626           Sampled:       20/01/2022 20:35   Report No.:   137616
+Description:      4530
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559627           Sampled:       20/01/2022 22:45   Report No.:   137617
+Description:      4531
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559628           Sampled:       20/01/2022 23:30   Report No.:   137618
+Description:      4532
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559629           Sampled:       21/01/2022 01:45   Report No.:   137619
+Description:      4533
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559630           Sampled:       21/01/2022 03:50   Report No.:   137620
+Description:      4534
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559631           Sampled:       21/01/2022 07:50   Report No.:   137621
+Description:      4535
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 10 of 15
+Sample Ref:       SU-559632           Sampled:       21/01/2022 10:55   Report No.:   137622
+Description:      4536
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+Presumptive Pseudomonads aeruginosa 250 ml                                                            £6.06
+                                                                                                     £25.55
+
+Sample Ref:       SU-559686           Sampled:       21/01/2022 13:30   Report No.:   137645
+Description:      4537
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559687           Sampled:       21/01/2022 14:30   Report No.:   137646
+Description:      4538
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559688           Sampled:       21/01/2022 19:20   Report No.:   137647
+Description:      4539
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559689           Sampled:       21/01/2022 21:55   Report No.:   137648
+Description:      4540
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559690           Sampled:       22/01/2022 00:50   Report No.:   137649
+Description:      4541
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 11 of 15
+Sample Ref:       SU-559718           Sampled:       22/01/2022 19:20   Report No.:   137710
+Description:      4542
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559719           Sampled:       22/01/2022 21:55   Report No.:   137711
+Description:      4543
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559720           Sampled:       23/01/2022 00:55   Report No.:   137712
+Description:      4544
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559721           Sampled:       23/01/2022 06:40   Report No.:   137713
+Description:      4545
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559722           Sampled:       23/01/2022 09:35   Report No.:   137714
+Description:      4546
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559723           Sampled:       23/01/2022 11:00   Report No.:   137715
+Description:      4547
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 12 of 15
+Sample Ref:       SU-559844           Sampled:       23/01/2022 12:20   Report No.:   137737
+Description:      4548
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559845           Sampled:       23/01/2022 14:00   Report No.:   137738
+Description:      4549
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559846           Sampled:       23/01/2022 15:00   Report No.:   137739
+Description:      4550
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559847           Sampled:       24/01/2022 12:00   Report No.:   137740
+Description:      4551
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559848           Sampled:       24/01/2022 12:00   Report No.:   137741
+Description:      4552
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-559849           Sampled:       24/01/2022 13:00   Report No.:   137742
+Description:      Blends 4552
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 13 of 15
+Sample Ref:       SU-560398           Sampled:       28/01/2022 09:45   Report No.:   137885
+Description:      4552 BLENDS
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-560568           Sampled:       31/01/2022 07:50   Report No.:   138050
+Description:      4553
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-560569           Sampled:       31/01/2022 09:30   Report No.:   138051
+Description:      4555
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-560570           Sampled:       31/01/2022 11:15   Report No.:   138052
+Description:      4554
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-560645           Sampled:       31/01/2022 12:36   Report No.:   138053
+Description:      4556
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-560646           Sampled:       31/01/2022 14:00   Report No.:   138054
+Description:      4557
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+
+
+
+00004048-01.PDF                                                                                Page 14 of 15
+Sample Ref:       SU-560647           Sampled:       31/01/2022 16:00   Report No.:   138055
+Description:      4558
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-560648           Sampled:       31/01/2022 18:20   Report No.:   138056
+Description:      4559
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+Sample Ref:       SU-560649           Sampled:       31/01/2022 21:50   Report No.:   138057
+Description:      4560
+
+Coliform bacteria and Escherichia coli (cfu/250ml)                                                    £4.75
+Confirmed Enterococci 250ml                                                                           £4.03
+Confirmed Pseudomonas 250ml                                                                           £4.05
+Plate count 3 day @ 22°C                                                                              £3.46
+Potable plate count @ 37°C - 1 day                                                                    £3.20
+                                                                                                     £19.49
+
+
+
+Net Total                                                                                          £1,662.71
+
+VAT                                                                                                  £332.54
+
+Gross Total                                                                                        £1,995.25
+
+
+
+
+00004048-01.PDF                                                                                Page 15 of 15
+

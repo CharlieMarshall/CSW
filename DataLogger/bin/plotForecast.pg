@@ -1,0 +1,27 @@
+#!/usr/bin/gnuplot --persist --persist
+
+set terminal svg font "Arial,14" size 1200,520
+set output "$WEB_SERVER_DIR/images/forecast.svg"
+#set terminal pngcairo font "Arial,14" size 1200,520
+#set output "$WEB_SERVER_DIR/images/forecast.png"
+
+set datafile separator "\t"
+
+set xdata time
+set timefmt "%d/%m/%Y %H:%M"
+set format x "%H:%M\n%a\n%d %b"
+
+set ylabel "Stock (water) m3"
+
+set yrange [-50:475]
+set ytics -50,50,450
+set autoscale xfix
+
+set title "Forecast Stock Levels"
+set key top right horizontal
+set ytic scale 0
+set grid
+set style data lines
+
+# lowlevel is passed as a command line argument
+plot "forecast.dat" using 1:2 title "Forecast", lowlevel title "Low level alarm"

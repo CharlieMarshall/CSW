@@ -1,0 +1,24 @@
+#!/usr/bin/gnuplot --persist
+set terminal svg font "Arial,14" size 1000,400
+set output "$WEB_SERVER_DIR/images/tank_summary.svg"
+
+set xdata time
+set timefmt "%d/%m/%Y %H:%M"
+set format x "%H:%M\n%d %b"
+
+set ylabel "Water Level m3"
+
+set yrange [0:120]
+# adding fix on the end stops the gaps and gaps appearing at beginning and end
+set autoscale xfixmin # xfix will fix both min and max and will fill up the graph
+
+set key outside right center title "Tanks"
+set grid
+set style data lines
+
+# Replace small stripes on the Y-axis with a horizontal gridlines
+set ytic scale 0
+
+set grid ytics lc rgb "#000000"
+
+plot "storageTable.dat" using 1:3 title "1" , "" using 1:4 title "2" , "" using 1:5 title "3"

@@ -1,0 +1,17 @@
+# systemd script to start the LED load number in the office
+#### remember to enable it on boot by running: sudo systemctl enable led.service ####
+#
+[Unit]
+Description=LED service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/node csw_Multi_Coloured_LED.js
+WorkingDirectory=/home/pi/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

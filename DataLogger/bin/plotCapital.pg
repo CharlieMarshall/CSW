@@ -1,0 +1,56 @@
+#!/usr/bin/gnuplot --persist
+set terminal svg font "Arial,14" size 400,500
+set size 1.2, 1
+set output "$WEB_SERVER_DIR/images/capital.svg"
+set datafile separator "\t" # use tabs instead of space separator
+
+# needed for thousand seperator
+set decimal locale
+
+stats 'capital.dat' u 2 noout      # get STATS_sum (sum of column 2)
+
+#define angles and percentages
+ang(x)=x*360.0/STATS_sum        # get angle (grades)
+perc(x)=x*100.0/STATS_sum       # get percentage
+
+set size square                 # square canvas
+set xrange [-1.5:1.5]
+set yrange [-1.5:1.5]
+set style fill solid 1
+
+set title "Capital" offset 0,-3
+
+unset border
+unset tics
+unset key
+
+# this defines the colors yellow~FFC90E, and blue~1729A8
+# set palette defined (1 '#FFC90E', 2 '#1729A8')      # format '#RRGGBB'
+set palette defined (1 1 0.788 0.055, 2 0.090 0.161 0.659, 2 0.090 0.161 0.659 ) # format R G B (scaled to [0,1])
+
+
+Ai = Bi = 0.0;		# init angle
+mid = 0.0;		# mid angle
+i = j = 0;		# color
+z = x = -1.6;	# label position
+
+set linetype 1 linecolor rgb "#406090" # 2016
+set linetype 2 linecolor rgb "#e24d3d" # 2017
+set linetype 3 linecolor rgb "#009e73" # 2018
+set linetype 4 linecolor rgb "#FF8000" # 2019
+set linetype 5 linecolor rgb "#f4e542" # Outstanding
+
+# 2nd line renders the % inside the chart and the key labels and the coloured boxes
+# 3rd line renders the label text
+
+plot 'capital.dat' u (0):(0):(1):(Ai):(Ai=Ai+ang($2)):(i=i+1) with circle linecolor var,\
+     'capital.dat' u (-1.35):(z=z+0.55/STATS_records):(sprintf("%s - £%'.2f", stringcolumn(1), $2)) w labels left,\
+     'capital.dat' u (-1.5) :(x=x+0.55/STATS_records):(j=j+1) w p pt 5 ps 2 linecolor var,\
+     'capital.dat' u (mid=Ai+ang($2), Ai=2*mid-Ai, mid=mid*pi/360.0, -0.7*cos(mid)):(-0.7*sin(mid)):(sprintf('%.2f\%', perc($2))) w labels
+#     'capital.dat' u (mid=Ai+ang($2), Ai=2*mid-Ai, mid=mid*pi/360.0, -0.5*cos(mid)):(-0.5*sin(mid)):(sprintf('%.2f\%', perc($2))) w labels
+
+
+unset output
+
+# http://stackoverflow.com/questions/36783738/how-to-modify-a-pie-chart-created-by-gnuplot
+# http://stackoverflow.com/questions/31896718/generation-of-pie-chart-using-gnuplot

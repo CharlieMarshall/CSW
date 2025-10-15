@@ -1,0 +1,33 @@
+#!/usr/bin/gnuplot --persist
+set terminal svg enhanced font "Arial,14" size 1000,300
+set output "$WEB_SERVER_DIR/images/boreholeElec.svg"
+
+# Replace small stripes on the Y-axis with a horizontal gridlines
+set tic scale 0
+set grid ytics
+
+# Remove border around chart
+unset border
+
+set ylabel "No. of Hours Abstracting"
+set yrange [0:24]
+set ytics (0,4,8,12,16,20,24)
+
+set key top right outside horizontal
+set style data histograms
+set style histogram rowstacked
+set boxwidth 0.5 #relative
+set style fill solid # 1.0 border -1
+
+# Calculate totals
+stats 'boreholeElec.dat' every ::0 using 2 nooutput
+night = int(STATS_sum)
+stats 'boreholeElec.dat' every ::0 using 3 nooutput
+day = int(STATS_sum)
+monthlyEfficieny    = int(system("awk ' NR>1 { pumped+=$2+$3} END { print (pumped / ( (NR-1)*24))*100 }' boreholeElec.dat"))
+meanAverageHrPumped = int(system("awk ' NR>1 { pumped+=$2+$3} END { print pumped / (NR-1) }' boreholeElec.dat"))
+
+plot "boreholeElec.dat" using 2:xtic(1) title sprintf("Night Rate (%d hours)", night) lt rgb "#009e73", \
+  "" using 3 title sprintf("Day Rate (%d hours)", day) lt rgb "#e24d3d", \
+  "" using 4 title sprintf("Average Hours (%d total hours)", day + night) linewidth 3 lt 1 fill solid 1 smooth bezier, \
+meanAverageHrPumped title sprintf("Average Hours (%d%% capacity)", monthlyEfficieny) linewidth 3

@@ -1,0 +1,59 @@
+#!/usr/bin/gnuplot --persist
+#########
+######### best tutorial I could find was here: http://zenonharley.com/gnuplot/cli/2015/06/29/graphing-data-from-the-command-line.html
+######### Will need to amend the label offset every year!
+######### https://stackoverflow.com/questions/40484582/gnuplot-two-columns-histogram-with-values-on-top-of-bars
+#########
+
+LOGS_DIR=/media/charlie/Shared/CSW/DataLogger$LOGS_DIR
+
+# Output W3C Scalable Vector Graphics
+set terminal svg enhanced font "Arial,14" size 1200,300
+set output "$WEB_SERVER_DIR/images/volumes.svg"
+
+unset border			# Remove border around chart
+# set title 'Volume per year'	# Set graph title
+set key top right outside horizontal
+# set xlabel 'Month'		# Set label of x-axis
+set ylabel 'No. of Loads'	# Set label of y-axis
+# set yrange [0 to 250]		# Manual set the Y-axis range
+
+set style data histogram	# Use a histogram
+set boxwidth 0.8 relative	# set width of the histogram boxes
+set style histogram clustered gap 2
+set style fill solid 0.4 noborder # histogram bars: 1 is solid, less than 1 is transparent
+# remove some whitespace to the left and right of the graph
+set offset -0.5,-0.5,0,0 # this line causes issues if we only do the smooth line not the histogram
+
+set xtics scale 0		# Disable the tiny tick lines on the x-axis
+set tic scale 0
+set grid ytics
+
+# awk command to accumlate the yearly totals for the key and outputs them in the format YYYY:(NO.LOADS) 
+# to make a space in the title we need to use Enhanced postscript: &{x}	# https://stackoverflow.com/questions/15013134/gnuplot-how-to-include-a-space-character-in-key-titles
+totals = system("awk ' BEGIN {yr=2016} !/^#/ && NF!=0 { for(i=2;i<=NF;i++) { a[i]+=$i; if(NF>maxCol) maxCol=NF} } END { for (y=2;y<=maxCol;y++) print yr++ \":(\" a[y] \"&{x}Loads)\"}' $LOGS_DIR/vol.dat")
+
+##### print out totals for debugging ####
+# do for [total in totals] { print total }
+###################
+
+# Get current year and deduct 2014. This gives us the last column number we need for our loop.
+# We deduct 2014 as the first year of production was 2016 but the first column we use is column number 2 so our loops need to go from 2-6 in 2020
+lastCol=`date +%Y`-2014
+
+# Plot data from a file, with extra notes below:
+#
+# 1st plot line prints a smoothed (smooth bezier) out average line for each year (i of the for loop)
+# word(totals,i-1) get the title text from the totals array and prints it as the key, using the for loop
+# 2nd plot line prints histogram of each year with no title
+# using i:xtic(1)       Plot column i using tic labels from column 1
+# 3rd line prints the no. of loads above the current year histogram
+# :i:i                  prints i which is the last column and the lastcolumn numbers as a label
+# (lastcol/2)+0.4,1     Offset horizontally by half the number of complete years plus 0.4. Offset verically by 1
+# 4th line prints the no. of loads above each histogram, too many years to justify printing, too messy
+
+plot for [i=2:lastCol] "vol.dat" using i title word(totals,i-1) linewidth 3 smooth bezier, \
+     for [i=2:lastCol] "" using i:xtic(1) notitle, \
+		       "" using :lastCol:lastCol with labels offset (lastCol/2)+0.4,1 notitle
+#    for [i=2:lastCol] "" using :i:i with labels offset 0,0.5 font "Arial,12" notitle
+

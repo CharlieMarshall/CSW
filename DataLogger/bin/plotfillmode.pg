@@ -1,0 +1,24 @@
+#!/usr/bin/gnuplot --persist
+set terminal svg enhanced size 1920,300 font "Arial,14"
+set output "$WEB_SERVER_DIR/images/elec.svg"
+
+# not working here
+#set decimal locale # needed for thousand seperator
+
+set key top right outside horizontal
+set ylabel "Litres"
+
+set xtics font "Arial,10" nomirror rotate by -90 left offset -0.9,0 
+unset border
+
+# Thinner, filled bars
+set boxwidth 0.6
+set style fill solid 1.0 # border -1
+
+set yrange [0 to 29500]
+set ytics (0,5000,10000,15000,20000,25000,29500)
+
+
+plot "fillmode.dat" using 2:xticlabels(1) with boxes title "Fast Fill" lt rgb "#406090",\
+     "" using 3 with boxes title "Low Level" lt rgb "#e24d3d",\
+     "" using 4 with boxes title "Gravity" lt rgb "#009e73"

@@ -1,0 +1,25 @@
+#!/usr/bin/gnuplot --persist --persist
+set terminal svg font "Arial,14" size 1200,520
+set output sprintf("%s/images/fr.svg", system("echo $WEB_SERVER_DIR"))
+#set datafile separator "\t"
+
+set xdata time
+set timefmt "%d/%m/%Y"
+set format x "%d %b \n %Y"
+
+set ylabel "Flow rate m3"
+set yrange [12 to 22]
+
+set title "Abstraction Flow rate"
+set key top left vertical
+#unset key
+set ytic scale 0
+set grid
+set style data lines
+
+plot sprintf("%s/dailyFlowRate.dat", system("echo $LOGS_DIR")) using 1:2 with points lc rgb "red" title "Average Daily Flow Rates", \
+ "" using 1:2 smooth sbezier with line lc rgb "blue" title "Smoothed Curve"
+
+#plot "dailyFlowRate.dat" using 1:2 smooth sbezier with points lc rgb "blue" title "Smoothed curve", "" using 1:2 with points lc rgb "red" title "Average Flow Rates" 
+#plot "dailyFlowRate.dat" using 1:2 with points title "Average Flow Rates" 
+#plot "dailyFlowRate.dat" using 1:2 smooth sbezier with points title "Smoothed curve"

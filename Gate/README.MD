@@ -10,6 +10,7 @@ Mgetty was used to handle the phone calls and caller ID. We then used scripts to
 ## Dependencies
 
 The GMS pi HAT required the IteadSim800 library: https://github.com/lamondlab/IteadSIM800
+
 mgetty - for the caller ID
 
 ## Author

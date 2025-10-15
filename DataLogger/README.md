@@ -22,13 +22,18 @@ and produce HTML table and .dat files for gnuplot to create graphs
 
 ## Usage
 
+You will need to add the bin directory to your $PATH.
+It also requires the following variables exported (replacing installDIR with the location you have installed the folders to):
+
+```
+export LOGS_DIR=installDIR/logs
+export WEB_SERVER_DIR=installDIR/var/www/html
+```
+
 The logs directory has sample log data to allow the shell script to still fully function, they have been sanitised of sensitive information.
 
-You will need the following environmental variables:
-	export LOGS_DIR=logs
-	export WEB_SERVER_DIR=var/www/html
 
-Obviously communicating with the PLC will no longer work and would also require the following git repositories to be installed:
+Obviously communicating with the PLC will no longer work (the .js scripts) and would also require the following git repositories to be installed:
 
 	https://github.com/ptrks/node-omron-fins
 

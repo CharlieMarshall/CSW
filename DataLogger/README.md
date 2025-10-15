@@ -41,7 +41,7 @@ Execute a script from the bin directory according to its usage within the file
 ## Misc
 
 For reference here are the lines per file for the shell scripts:
-
+```
    242 volumes.sh
    222 tableLabCostsYr.sh
    184 screenshots.sh
@@ -114,3 +114,4 @@ For reference here are the lines per file for the shell scripts:
      7 getTanker.sh
      7 findDuplicateTankers.sh
   3768 total
+```
